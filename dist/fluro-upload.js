@@ -17,7 +17,7 @@ angular.module('fluro.upload')
 
     /////////////////////////////////
 
-    controller.meta = {}
+    controller.metaData = {}
 
     /////////////////////////////////
 
@@ -79,7 +79,8 @@ angular.module('fluro.upload')
             details.json = angular.toJson($scope.item);
         }
         */
-
+       
+        details.json = angular.toJson(controller.metaData);
         item.formData = [details];
 
         console.log('SETUP UPLOAD ITEM', item)
