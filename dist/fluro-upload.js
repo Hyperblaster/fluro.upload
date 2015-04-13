@@ -36,7 +36,7 @@ angular.module('fluro.upload')
 
     controller.uploader = new FileUploader({
         url: Fluro.apiURL + '/file/replace',
-        removeAfterUpload: false,
+        removeAfterUpload: true,
         withCredentials: true,
         formData: {},
     });
